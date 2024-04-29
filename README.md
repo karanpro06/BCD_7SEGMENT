@@ -21,18 +21,16 @@ STEP:7 compare the output with truth table.
 ![image](https://github.com/RESMIRNAIR/BCD_7SEGMENT/assets/154305926/804ab8db-8637-45ac-b10f-80e77d818d61)
 # VERILOG CODE
 ~~~
-//Verilog module.
+Verilog module.
 module segment7(
      bcd,
      seg
     );
      
-     //Declare inputs,outputs and internal variables.
      input [3:0] bcd;
      output [6:0] seg;
      reg [6:0] seg;
 
-//always block for converting bcd digit into 7 segment format
     always @(bcd)
     begin
         case (bcd) //case statement
@@ -46,7 +44,6 @@ module segment7(
             7 : seg = 7'b0001111;
             8 : seg = 7'b0000000;
             9 : seg = 7'b0000100;
-            //switch off 7 segment character when the bcd digit is not a decimal number.
             default : seg = 7'b1111111; 
         endcase
     end
