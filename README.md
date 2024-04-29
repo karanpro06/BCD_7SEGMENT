@@ -1,6 +1,8 @@
 #  BCD_7SEGMENT
 # AIM
 To design and simulate BCD 7 Segment using vivado.
+# APPARATUS REQUIRED
+PC with vivado software.
 # PROCEDURE
 STEP:1 Start the vivado software, Select and Name the New project.
 
